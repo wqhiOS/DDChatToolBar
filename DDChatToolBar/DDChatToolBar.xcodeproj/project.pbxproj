@@ -15,6 +15,39 @@
 		E3395C3320B3C2BA00E0625E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C3220B3C2BA00E0625E /* main.m */; };
 		E3395C3D20B3C2BA00E0625E /* DDChatToolBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C3C20B3C2BA00E0625E /* DDChatToolBarTests.m */; };
 		E3395C4820B3C2BA00E0625E /* DDChatToolBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C4720B3C2BA00E0625E /* DDChatToolBarUITests.m */; };
+		E3395C5820B3C2FE00E0625E /* DDChatToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C5720B3C2FE00E0625E /* DDChatToolBar.m */; };
+		E3395C7420B3C50800E0625E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C5B20B3C50800E0625E /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		E3395C7520B3C50800E0625E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C6420B3C50800E0625E /* ViewController+MASAdditions.m */; };
+		E3395C7620B3C50800E0625E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C6820B3C50800E0625E /* MASCompositeConstraint.m */; };
+		E3395C7720B3C50800E0625E /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C6920B3C50800E0625E /* MASConstraintMaker.m */; };
+		E3395C7820B3C50800E0625E /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C6A20B3C50800E0625E /* MASLayoutConstraint.m */; };
+		E3395C7920B3C50800E0625E /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C6B20B3C50800E0625E /* NSArray+MASAdditions.m */; };
+		E3395C7A20B3C50800E0625E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C6C20B3C50800E0625E /* View+MASAdditions.m */; };
+		E3395C7B20B3C50800E0625E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C6F20B3C50800E0625E /* MASConstraint.m */; };
+		E3395C7C20B3C50800E0625E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C7120B3C50800E0625E /* MASViewConstraint.m */; };
+		E3395C7D20B3C50800E0625E /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C7220B3C50800E0625E /* MASViewAttribute.m */; };
+		E3395C7E20B3C50800E0625E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3395C7320B3C50800E0625E /* Info.plist */; };
+		E3395C8320B3C6EE00E0625E /* DDPressToTalkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C8220B3C6EE00E0625E /* DDPressToTalkButton.m */; };
+		E3395C9520B3D4D300E0625E /* chat_toolbar_emotion@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8520B3D4D300E0625E /* chat_toolbar_emotion@3x.png */; };
+		E3395C9620B3D4D300E0625E /* chat_toolbar_emotion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8620B3D4D300E0625E /* chat_toolbar_emotion@2x.png */; };
+		E3395C9720B3D4D300E0625E /* chat_toolbar_voice_HL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8720B3D4D300E0625E /* chat_toolbar_voice_HL@3x.png */; };
+		E3395C9820B3D4D300E0625E /* chat_toolbar_more_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8820B3D4D300E0625E /* chat_toolbar_more_HL@2x.png */; };
+		E3395C9920B3D4D300E0625E /* chat_toolbar_emotion_HL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8920B3D4D300E0625E /* chat_toolbar_emotion_HL@3x.png */; };
+		E3395C9A20B3D4D300E0625E /* chat_toolbar_emotion_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8A20B3D4D300E0625E /* chat_toolbar_emotion_HL@2x.png */; };
+		E3395C9B20B3D4D300E0625E /* chat_toolbar_more_HL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8B20B3D4D300E0625E /* chat_toolbar_more_HL@3x.png */; };
+		E3395C9C20B3D4D300E0625E /* chat_toolbar_voice_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8C20B3D4D300E0625E /* chat_toolbar_voice_HL@2x.png */; };
+		E3395C9D20B3D4D300E0625E /* chat_toolbar_keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8D20B3D4D300E0625E /* chat_toolbar_keyboard@2x.png */; };
+		E3395C9E20B3D4D300E0625E /* chat_toolbar_keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8E20B3D4D300E0625E /* chat_toolbar_keyboard@3x.png */; };
+		E3395C9F20B3D4D300E0625E /* chat_toolbar_voice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C8F20B3D4D300E0625E /* chat_toolbar_voice@3x.png */; };
+		E3395CA020B3D4D300E0625E /* chat_toolbar_more@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C9020B3D4D300E0625E /* chat_toolbar_more@3x.png */; };
+		E3395CA120B3D4D300E0625E /* chat_toolbar_keyboard_HL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C9120B3D4D300E0625E /* chat_toolbar_keyboard_HL@3x.png */; };
+		E3395CA220B3D4D300E0625E /* chat_toolbar_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C9220B3D4D300E0625E /* chat_toolbar_more@2x.png */; };
+		E3395CA320B3D4D300E0625E /* chat_toolbar_keyboard_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C9320B3D4D300E0625E /* chat_toolbar_keyboard_HL@2x.png */; };
+		E3395CA420B3D4D300E0625E /* chat_toolbar_voice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3395C9420B3D4D300E0625E /* chat_toolbar_voice@2x.png */; };
+		E3395CA720B3D52A00E0625E /* DDChatBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CA620B3D52A00E0625E /* DDChatBaseViewController.m */; };
+		E3395CAD20B3D73200E0625E /* DDChatViewController+keyboardNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CAC20B3D73200E0625E /* DDChatViewController+keyboardNotification.m */; };
+		E3395CB420B3EAB800E0625E /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CB320B3EAB800E0625E /* UIButton+Extensions.m */; };
+		E3395CBA20B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CB920B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +84,63 @@
 		E3395C4320B3C2BA00E0625E /* DDChatToolBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDChatToolBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3395C4720B3C2BA00E0625E /* DDChatToolBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatToolBarUITests.m; sourceTree = "<group>"; };
 		E3395C4920B3C2BA00E0625E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3395C5620B3C2FE00E0625E /* DDChatToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatToolBar.h; sourceTree = "<group>"; };
+		E3395C5720B3C2FE00E0625E /* DDChatToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatToolBar.m; sourceTree = "<group>"; };
+		E3395C5A20B3C50800E0625E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		E3395C5B20B3C50800E0625E /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		E3395C5C20B3C50800E0625E /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		E3395C5D20B3C50800E0625E /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		E3395C5E20B3C50800E0625E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E3395C5F20B3C50800E0625E /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		E3395C6020B3C50800E0625E /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		E3395C6120B3C50800E0625E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		E3395C6220B3C50800E0625E /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		E3395C6320B3C50800E0625E /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		E3395C6420B3C50800E0625E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		E3395C6520B3C50800E0625E /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		E3395C6620B3C50800E0625E /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		E3395C6720B3C50800E0625E /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E3395C6820B3C50800E0625E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		E3395C6920B3C50800E0625E /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		E3395C6A20B3C50800E0625E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		E3395C6B20B3C50800E0625E /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		E3395C6C20B3C50800E0625E /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		E3395C6D20B3C50800E0625E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E3395C6E20B3C50800E0625E /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		E3395C6F20B3C50800E0625E /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		E3395C7020B3C50800E0625E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		E3395C7120B3C50800E0625E /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		E3395C7220B3C50800E0625E /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		E3395C7320B3C50800E0625E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3395C8020B3C52F00E0625E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E3395C8120B3C6EE00E0625E /* DDPressToTalkButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPressToTalkButton.h; sourceTree = "<group>"; };
+		E3395C8220B3C6EE00E0625E /* DDPressToTalkButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPressToTalkButton.m; sourceTree = "<group>"; };
+		E3395C8520B3D4D300E0625E /* chat_toolbar_emotion@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_emotion@3x.png"; sourceTree = "<group>"; };
+		E3395C8620B3D4D300E0625E /* chat_toolbar_emotion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_emotion@2x.png"; sourceTree = "<group>"; };
+		E3395C8720B3D4D300E0625E /* chat_toolbar_voice_HL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_voice_HL@3x.png"; sourceTree = "<group>"; };
+		E3395C8820B3D4D300E0625E /* chat_toolbar_more_HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_more_HL@2x.png"; sourceTree = "<group>"; };
+		E3395C8920B3D4D300E0625E /* chat_toolbar_emotion_HL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_emotion_HL@3x.png"; sourceTree = "<group>"; };
+		E3395C8A20B3D4D300E0625E /* chat_toolbar_emotion_HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_emotion_HL@2x.png"; sourceTree = "<group>"; };
+		E3395C8B20B3D4D300E0625E /* chat_toolbar_more_HL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_more_HL@3x.png"; sourceTree = "<group>"; };
+		E3395C8C20B3D4D300E0625E /* chat_toolbar_voice_HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_voice_HL@2x.png"; sourceTree = "<group>"; };
+		E3395C8D20B3D4D300E0625E /* chat_toolbar_keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_keyboard@2x.png"; sourceTree = "<group>"; };
+		E3395C8E20B3D4D300E0625E /* chat_toolbar_keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_keyboard@3x.png"; sourceTree = "<group>"; };
+		E3395C8F20B3D4D300E0625E /* chat_toolbar_voice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_voice@3x.png"; sourceTree = "<group>"; };
+		E3395C9020B3D4D300E0625E /* chat_toolbar_more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_more@3x.png"; sourceTree = "<group>"; };
+		E3395C9120B3D4D300E0625E /* chat_toolbar_keyboard_HL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_keyboard_HL@3x.png"; sourceTree = "<group>"; };
+		E3395C9220B3D4D300E0625E /* chat_toolbar_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_more@2x.png"; sourceTree = "<group>"; };
+		E3395C9320B3D4D300E0625E /* chat_toolbar_keyboard_HL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_keyboard_HL@2x.png"; sourceTree = "<group>"; };
+		E3395C9420B3D4D300E0625E /* chat_toolbar_voice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_toolbar_voice@2x.png"; sourceTree = "<group>"; };
+		E3395CA520B3D52A00E0625E /* DDChatBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatBaseViewController.h; sourceTree = "<group>"; };
+		E3395CA620B3D52A00E0625E /* DDChatBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatBaseViewController.m; sourceTree = "<group>"; };
+		E3395CAB20B3D73200E0625E /* DDChatViewController+keyboardNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDChatViewController+keyboardNotification.h"; sourceTree = "<group>"; };
+		E3395CAC20B3D73200E0625E /* DDChatViewController+keyboardNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDChatViewController+keyboardNotification.m"; sourceTree = "<group>"; };
+		E3395CAE20B3E88600E0625E /* DDChatToolBarCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatToolBarCommon.h; sourceTree = "<group>"; };
+		E3395CB220B3EAB800E0625E /* UIButton+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extensions.h"; sourceTree = "<group>"; };
+		E3395CB320B3EAB800E0625E /* UIButton+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extensions.m"; sourceTree = "<group>"; };
+		E3395CB720B3EF4100E0625E /* DDChatToolBarTranslateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatToolBarTranslateDelegate.h; sourceTree = "<group>"; };
+		E3395CB820B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDChatBaseViewController+chatToolBarTranslate.h"; sourceTree = "<group>"; };
+		E3395CB920B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDChatBaseViewController+chatToolBarTranslate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +191,8 @@
 		E3395C2220B3C2BA00E0625E /* DDChatToolBar */ = {
 			isa = PBXGroup;
 			children = (
+				E3395C5920B3C50800E0625E /* Masonry */,
+				E3395C5520B3C2ED00E0625E /* DDChatToolBar */,
 				E3395C2320B3C2BA00E0625E /* AppDelegate.h */,
 				E3395C2420B3C2BA00E0625E /* AppDelegate.m */,
 				E3395C2620B3C2BA00E0625E /* ViewController.h */,
@@ -110,6 +202,7 @@
 				E3395C2E20B3C2BA00E0625E /* LaunchScreen.storyboard */,
 				E3395C3120B3C2BA00E0625E /* Info.plist */,
 				E3395C3220B3C2BA00E0625E /* main.m */,
+				E3395C8020B3C52F00E0625E /* PrefixHeader.pch */,
 			);
 			path = DDChatToolBar;
 			sourceTree = "<group>";
@@ -130,6 +223,100 @@
 				E3395C4920B3C2BA00E0625E /* Info.plist */,
 			);
 			path = DDChatToolBarUITests;
+			sourceTree = "<group>";
+		};
+		E3395C5520B3C2ED00E0625E /* DDChatToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				E3395C8420B3D4D300E0625E /* images */,
+				E3395CAE20B3E88600E0625E /* DDChatToolBarCommon.h */,
+				E3395C5620B3C2FE00E0625E /* DDChatToolBar.h */,
+				E3395C5720B3C2FE00E0625E /* DDChatToolBar.m */,
+				E3395CBB20B3F08000E0625E /* DDChatToolBarDelegate */,
+				E3395C8120B3C6EE00E0625E /* DDPressToTalkButton.h */,
+				E3395C8220B3C6EE00E0625E /* DDPressToTalkButton.m */,
+				E3395CA520B3D52A00E0625E /* DDChatBaseViewController.h */,
+				E3395CA620B3D52A00E0625E /* DDChatBaseViewController.m */,
+				E3395CAB20B3D73200E0625E /* DDChatViewController+keyboardNotification.h */,
+				E3395CAC20B3D73200E0625E /* DDChatViewController+keyboardNotification.m */,
+				E3395CB520B3EABC00E0625E /* UIButton+Extensions */,
+			);
+			path = DDChatToolBar;
+			sourceTree = "<group>";
+		};
+		E3395C5920B3C50800E0625E /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				E3395C5A20B3C50800E0625E /* MASCompositeConstraint.h */,
+				E3395C5B20B3C50800E0625E /* NSLayoutConstraint+MASDebugAdditions.m */,
+				E3395C5C20B3C50800E0625E /* MASConstraint+Private.h */,
+				E3395C5D20B3C50800E0625E /* MASLayoutConstraint.h */,
+				E3395C5E20B3C50800E0625E /* NSArray+MASShorthandAdditions.h */,
+				E3395C5F20B3C50800E0625E /* MASConstraintMaker.h */,
+				E3395C6020B3C50800E0625E /* View+MASAdditions.h */,
+				E3395C6120B3C50800E0625E /* NSArray+MASAdditions.h */,
+				E3395C6220B3C50800E0625E /* MASUtilities.h */,
+				E3395C6320B3C50800E0625E /* MASViewAttribute.h */,
+				E3395C6420B3C50800E0625E /* ViewController+MASAdditions.m */,
+				E3395C6520B3C50800E0625E /* MASViewConstraint.h */,
+				E3395C6620B3C50800E0625E /* MASConstraint.h */,
+				E3395C6720B3C50800E0625E /* NSLayoutConstraint+MASDebugAdditions.h */,
+				E3395C6820B3C50800E0625E /* MASCompositeConstraint.m */,
+				E3395C6920B3C50800E0625E /* MASConstraintMaker.m */,
+				E3395C6A20B3C50800E0625E /* MASLayoutConstraint.m */,
+				E3395C6B20B3C50800E0625E /* NSArray+MASAdditions.m */,
+				E3395C6C20B3C50800E0625E /* View+MASAdditions.m */,
+				E3395C6D20B3C50800E0625E /* View+MASShorthandAdditions.h */,
+				E3395C6E20B3C50800E0625E /* Masonry.h */,
+				E3395C6F20B3C50800E0625E /* MASConstraint.m */,
+				E3395C7020B3C50800E0625E /* ViewController+MASAdditions.h */,
+				E3395C7120B3C50800E0625E /* MASViewConstraint.m */,
+				E3395C7220B3C50800E0625E /* MASViewAttribute.m */,
+				E3395C7320B3C50800E0625E /* Info.plist */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		E3395C8420B3D4D300E0625E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E3395C8520B3D4D300E0625E /* chat_toolbar_emotion@3x.png */,
+				E3395C8620B3D4D300E0625E /* chat_toolbar_emotion@2x.png */,
+				E3395C8720B3D4D300E0625E /* chat_toolbar_voice_HL@3x.png */,
+				E3395C8820B3D4D300E0625E /* chat_toolbar_more_HL@2x.png */,
+				E3395C8920B3D4D300E0625E /* chat_toolbar_emotion_HL@3x.png */,
+				E3395C8A20B3D4D300E0625E /* chat_toolbar_emotion_HL@2x.png */,
+				E3395C8B20B3D4D300E0625E /* chat_toolbar_more_HL@3x.png */,
+				E3395C8C20B3D4D300E0625E /* chat_toolbar_voice_HL@2x.png */,
+				E3395C8D20B3D4D300E0625E /* chat_toolbar_keyboard@2x.png */,
+				E3395C8E20B3D4D300E0625E /* chat_toolbar_keyboard@3x.png */,
+				E3395C8F20B3D4D300E0625E /* chat_toolbar_voice@3x.png */,
+				E3395C9020B3D4D300E0625E /* chat_toolbar_more@3x.png */,
+				E3395C9120B3D4D300E0625E /* chat_toolbar_keyboard_HL@3x.png */,
+				E3395C9220B3D4D300E0625E /* chat_toolbar_more@2x.png */,
+				E3395C9320B3D4D300E0625E /* chat_toolbar_keyboard_HL@2x.png */,
+				E3395C9420B3D4D300E0625E /* chat_toolbar_voice@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E3395CB520B3EABC00E0625E /* UIButton+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3395CB220B3EAB800E0625E /* UIButton+Extensions.h */,
+				E3395CB320B3EAB800E0625E /* UIButton+Extensions.m */,
+			);
+			path = "UIButton+Extensions";
+			sourceTree = "<group>";
+		};
+		E3395CBB20B3F08000E0625E /* DDChatToolBarDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E3395CB720B3EF4100E0625E /* DDChatToolBarTranslateDelegate.h */,
+				E3395CB820B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.h */,
+				E3395CB920B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m */,
+			);
+			path = DDChatToolBarDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +422,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3395C9720B3D4D300E0625E /* chat_toolbar_voice_HL@3x.png in Resources */,
+				E3395CA120B3D4D300E0625E /* chat_toolbar_keyboard_HL@3x.png in Resources */,
+				E3395C9B20B3D4D300E0625E /* chat_toolbar_more_HL@3x.png in Resources */,
+				E3395C7E20B3C50800E0625E /* Info.plist in Resources */,
+				E3395C9F20B3D4D300E0625E /* chat_toolbar_voice@3x.png in Resources */,
+				E3395CA220B3D4D300E0625E /* chat_toolbar_more@2x.png in Resources */,
+				E3395C9D20B3D4D300E0625E /* chat_toolbar_keyboard@2x.png in Resources */,
+				E3395C9C20B3D4D300E0625E /* chat_toolbar_voice_HL@2x.png in Resources */,
 				E3395C3020B3C2BA00E0625E /* LaunchScreen.storyboard in Resources */,
 				E3395C2D20B3C2BA00E0625E /* Assets.xcassets in Resources */,
+				E3395C9520B3D4D300E0625E /* chat_toolbar_emotion@3x.png in Resources */,
+				E3395CA320B3D4D300E0625E /* chat_toolbar_keyboard_HL@2x.png in Resources */,
+				E3395C9920B3D4D300E0625E /* chat_toolbar_emotion_HL@3x.png in Resources */,
+				E3395CA420B3D4D300E0625E /* chat_toolbar_voice@2x.png in Resources */,
+				E3395CA020B3D4D300E0625E /* chat_toolbar_more@3x.png in Resources */,
+				E3395C9A20B3D4D300E0625E /* chat_toolbar_emotion_HL@2x.png in Resources */,
+				E3395C9620B3D4D300E0625E /* chat_toolbar_emotion@2x.png in Resources */,
 				E3395C2B20B3C2BA00E0625E /* Main.storyboard in Resources */,
+				E3395C9E20B3D4D300E0625E /* chat_toolbar_keyboard@3x.png in Resources */,
+				E3395C9820B3D4D300E0625E /* chat_toolbar_more_HL@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +466,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3395CAD20B3D73200E0625E /* DDChatViewController+keyboardNotification.m in Sources */,
+				E3395CB420B3EAB800E0625E /* UIButton+Extensions.m in Sources */,
+				E3395C7C20B3C50800E0625E /* MASViewConstraint.m in Sources */,
+				E3395C8320B3C6EE00E0625E /* DDPressToTalkButton.m in Sources */,
+				E3395CBA20B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m in Sources */,
+				E3395C7D20B3C50800E0625E /* MASViewAttribute.m in Sources */,
 				E3395C2820B3C2BA00E0625E /* ViewController.m in Sources */,
+				E3395C5820B3C2FE00E0625E /* DDChatToolBar.m in Sources */,
+				E3395C7920B3C50800E0625E /* NSArray+MASAdditions.m in Sources */,
+				E3395C7520B3C50800E0625E /* ViewController+MASAdditions.m in Sources */,
+				E3395CA720B3D52A00E0625E /* DDChatBaseViewController.m in Sources */,
+				E3395C7620B3C50800E0625E /* MASCompositeConstraint.m in Sources */,
 				E3395C3320B3C2BA00E0625E /* main.m in Sources */,
+				E3395C7A20B3C50800E0625E /* View+MASAdditions.m in Sources */,
+				E3395C7720B3C50800E0625E /* MASConstraintMaker.m in Sources */,
+				E3395C7B20B3C50800E0625E /* MASConstraint.m in Sources */,
+				E3395C7420B3C50800E0625E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E3395C7820B3C50800E0625E /* MASLayoutConstraint.m in Sources */,
 				E3395C2520B3C2BA00E0625E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +655,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				GCC_PREFIX_HEADER = DDChatToolBar/PrefixHeader.pch;
 				INFOPLIST_FILE = DDChatToolBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +673,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				GCC_PREFIX_HEADER = DDChatToolBar/PrefixHeader.pch;
 				INFOPLIST_FILE = DDChatToolBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

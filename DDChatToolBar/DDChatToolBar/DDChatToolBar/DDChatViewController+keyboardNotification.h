@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DDChatViewController+keyboardNotification.h
 //  DDChatToolBar
 //
 //  Created by wuqh on 2018/5/22.
@@ -8,8 +8,8 @@
 
 #import "DDChatBaseViewController.h"
 
-@interface ViewController : DDChatBaseViewController
+@interface DDChatBaseViewController (keyboardNotification)
 
+- (void)registerNotificationCenter;
 
 @end
-
