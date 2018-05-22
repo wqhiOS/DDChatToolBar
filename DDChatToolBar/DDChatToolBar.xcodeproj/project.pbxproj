@@ -241,9 +241,9 @@
 		E3395C5520B3C2ED00E0625E /* DDChatToolBar */ = {
 			isa = PBXGroup;
 			children = (
-				E3395C8420B3D4D300E0625E /* images */,
-				E3395CBC20B3F41E00E0625E /* DDChatKeyboard */,
 				E3395CAE20B3E88600E0625E /* DDChatToolBarCommon.h */,
+				E3395C8420B3D4D300E0625E /* imageSource */,
+				E3395CBC20B3F41E00E0625E /* DDChatKeyboard */,
 				E3395C5620B3C2FE00E0625E /* DDChatToolBar.h */,
 				E3395C5720B3C2FE00E0625E /* DDChatToolBar.m */,
 				E3395CBB20B3F08000E0625E /* DDChatToolBarDelegate */,
@@ -291,7 +291,7 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		E3395C8420B3D4D300E0625E /* images */ = {
+		E3395C8420B3D4D300E0625E /* imageSource */ = {
 			isa = PBXGroup;
 			children = (
 				E3395C8520B3D4D300E0625E /* chat_toolbar_emotion@3x.png */,
@@ -311,7 +311,7 @@
 				E3395C9320B3D4D300E0625E /* chat_toolbar_keyboard_HL@2x.png */,
 				E3395C9420B3D4D300E0625E /* chat_toolbar_voice@2x.png */,
 			);
-			path = images;
+			path = imageSource;
 			sourceTree = "<group>";
 		};
 		E3395CB520B3EABC00E0625E /* UIButton+Extensions */ = {
