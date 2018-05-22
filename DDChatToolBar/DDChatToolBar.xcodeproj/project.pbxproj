@@ -48,6 +48,9 @@
 		E3395CAD20B3D73200E0625E /* DDChatViewController+keyboardNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CAC20B3D73200E0625E /* DDChatViewController+keyboardNotification.m */; };
 		E3395CB420B3EAB800E0625E /* UIButton+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CB320B3EAB800E0625E /* UIButton+Extensions.m */; };
 		E3395CBA20B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CB920B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m */; };
+		E3395CBF20B3F49500E0625E /* DDChatBaseKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CBE20B3F49500E0625E /* DDChatBaseKeyboard.m */; };
+		E3395CC220B3F4A200E0625E /* DDChatEmojiKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CC120B3F4A200E0625E /* DDChatEmojiKeyboard.m */; };
+		E3395CC620B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CC520B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +144,13 @@
 		E3395CB720B3EF4100E0625E /* DDChatToolBarTranslateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatToolBarTranslateDelegate.h; sourceTree = "<group>"; };
 		E3395CB820B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDChatBaseViewController+chatToolBarTranslate.h"; sourceTree = "<group>"; };
 		E3395CB920B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDChatBaseViewController+chatToolBarTranslate.m"; sourceTree = "<group>"; };
+		E3395CBD20B3F49500E0625E /* DDChatBaseKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatBaseKeyboard.h; sourceTree = "<group>"; };
+		E3395CBE20B3F49500E0625E /* DDChatBaseKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatBaseKeyboard.m; sourceTree = "<group>"; };
+		E3395CC020B3F4A200E0625E /* DDChatEmojiKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatEmojiKeyboard.h; sourceTree = "<group>"; };
+		E3395CC120B3F4A200E0625E /* DDChatEmojiKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatEmojiKeyboard.m; sourceTree = "<group>"; };
+		E3395CC320B3F86B00E0625E /* DDChatKeyboardDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatKeyboardDelegate.h; sourceTree = "<group>"; };
+		E3395CC420B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDChatBaseViewController+ChatKeyboard.h"; sourceTree = "<group>"; };
+		E3395CC520B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDChatBaseViewController+ChatKeyboard.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				E3395C8420B3D4D300E0625E /* images */,
+				E3395CBC20B3F41E00E0625E /* DDChatKeyboard */,
 				E3395CAE20B3E88600E0625E /* DDChatToolBarCommon.h */,
 				E3395C5620B3C2FE00E0625E /* DDChatToolBar.h */,
 				E3395C5720B3C2FE00E0625E /* DDChatToolBar.m */,
@@ -317,6 +328,20 @@
 				E3395CB920B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m */,
 			);
 			path = DDChatToolBarDelegate;
+			sourceTree = "<group>";
+		};
+		E3395CBC20B3F41E00E0625E /* DDChatKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E3395CC320B3F86B00E0625E /* DDChatKeyboardDelegate.h */,
+				E3395CC420B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.h */,
+				E3395CC520B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m */,
+				E3395CBD20B3F49500E0625E /* DDChatBaseKeyboard.h */,
+				E3395CBE20B3F49500E0625E /* DDChatBaseKeyboard.m */,
+				E3395CC020B3F4A200E0625E /* DDChatEmojiKeyboard.h */,
+				E3395CC120B3F4A200E0625E /* DDChatEmojiKeyboard.m */,
+			);
+			path = DDChatKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,16 +494,19 @@
 				E3395CAD20B3D73200E0625E /* DDChatViewController+keyboardNotification.m in Sources */,
 				E3395CB420B3EAB800E0625E /* UIButton+Extensions.m in Sources */,
 				E3395C7C20B3C50800E0625E /* MASViewConstraint.m in Sources */,
+				E3395CBF20B3F49500E0625E /* DDChatBaseKeyboard.m in Sources */,
 				E3395C8320B3C6EE00E0625E /* DDPressToTalkButton.m in Sources */,
 				E3395CBA20B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m in Sources */,
 				E3395C7D20B3C50800E0625E /* MASViewAttribute.m in Sources */,
 				E3395C2820B3C2BA00E0625E /* ViewController.m in Sources */,
+				E3395CC620B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m in Sources */,
 				E3395C5820B3C2FE00E0625E /* DDChatToolBar.m in Sources */,
 				E3395C7920B3C50800E0625E /* NSArray+MASAdditions.m in Sources */,
 				E3395C7520B3C50800E0625E /* ViewController+MASAdditions.m in Sources */,
 				E3395CA720B3D52A00E0625E /* DDChatBaseViewController.m in Sources */,
 				E3395C7620B3C50800E0625E /* MASCompositeConstraint.m in Sources */,
 				E3395C3320B3C2BA00E0625E /* main.m in Sources */,
+				E3395CC220B3F4A200E0625E /* DDChatEmojiKeyboard.m in Sources */,
 				E3395C7A20B3C50800E0625E /* View+MASAdditions.m in Sources */,
 				E3395C7720B3C50800E0625E /* MASConstraintMaker.m in Sources */,
 				E3395C7B20B3C50800E0625E /* MASConstraint.m in Sources */,

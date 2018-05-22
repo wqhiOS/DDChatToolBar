@@ -43,7 +43,7 @@
 #pragma mark - Action
 - (void)voiceButtonClick:(UIButton* )button {
     if (self.status == DDChatToolBarStatusVoice) {
-    //文字输入
+    //文字键盘
         [self.voiceButton setImage:kVoiceImage imageHL:kVoiceImageHL];
         self.pressToTalkButton.hidden = YES;
         
@@ -51,9 +51,12 @@
         self.status = DDChatToolBarStatusKeyboard;
         
     }else {
-    //语音
+    //展示发送语音按钮
         if (self.status == DDChatToolBarStatusEmoji) {
-            [self.emojiButton setImage:kEmojiImageHL imageHL:kEmojiImageHL];
+            [self.emojiButton setImage:kEmojiImage imageHL:kEmojiImageHL];
+            if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+                [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusEmoji to:DDChatToolBarStatusVoice];
+            }
         }else if (self.status == DDChatToolBarStatusKeyboard) {
             [self.inputTextView resignFirstResponder];
         }
@@ -63,7 +66,36 @@
     }
 }
 - (void)emojiButtonClick:(UIButton *)button {
-    
+    if (self.status == DDChatToolBarStatusEmoji) {
+    //->文字键盘
+        [self.emojiButton setImage:kEmojiImage imageHL:kEmojiImageHL];
+        
+        //移除emojiKeyboard 设置代理的作用是，viewController才能拿到emojiKeyboard
+        if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+            [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusEmoji to:DDChatToolBarStatusKeyboard];
+        }
+        //inputTextView 在这个方法里面统一处理，因为inputTextView这个属性在此类里面，处理比较方面。不需要translateDelegate处理
+        [self.inputTextView becomeFirstResponder];
+        //修改status
+        self.status = DDChatToolBarStatusKeyboard;
+        
+    }else {
+    //->表情键盘
+        if (self.status == DDChatToolBarStatusVoice) {
+            [self.voiceButton setImage:kVoiceImage imageHL:kVoiceImageHL];
+            self.pressToTalkButton.hidden = YES;
+        }
+        [self.emojiButton setImage:kKeyboardImage imageHL:kKeyboardImageHL];
+        
+        if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)] ) {
+            [self.translateDelegate chatBar:self changeStatusFrom:self.status to:DDChatToolBarStatusEmoji];
+        }
+        
+        if (self.status == DDChatToolBarStatusKeyboard) {
+            [self.inputTextView resignFirstResponder];
+        }
+        self.status = DDChatToolBarStatusEmoji;
+    }
 }
 - (void)moreButtonClick:(UIButton *)button {
     
@@ -161,5 +193,21 @@
     kKeyboardImageHL = [UIImage imageNamed:@"chat_toolbar_keyboard_HL"];
 }
 
+#pragma mark - UITextViewDelegate
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
+    if (self.status != DDChatToolBarStatusKeyboard) {
+        if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+            [self.translateDelegate chatBar:self changeStatusFrom:self.status to:DDChatToolBarStatusKeyboard];
+        }
+        if (self.status == DDChatToolBarStatusEmoji) {
+            [self.emojiButton setImage:kEmojiImage imageHL:kEmojiImageHL];
+        }
+        else if (self.status == DDChatToolBarStatusMore) {
+            [self.moreButton setImage:kMoreImage imageHL:kMoreImageHL];
+        }
+        self.status = DDChatToolBarStatusKeyboard;
+    }
+    return YES;
+}
 
 @end

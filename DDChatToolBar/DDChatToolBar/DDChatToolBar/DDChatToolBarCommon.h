@@ -23,5 +23,7 @@ typedef NS_ENUM(NSInteger, DDChatToolBarStatus) {
 
 #define     BORDER_WIDTH_1PX            ([[UIScreen mainScreen] scale] > 0.0 ? 1.0 / [[UIScreen mainScreen] scale] : 1.0)
 
+#define     KEYBOARD_HEIGHT             (215.f)
+
 
 #endif /* DDChatToolBarCommon_h */

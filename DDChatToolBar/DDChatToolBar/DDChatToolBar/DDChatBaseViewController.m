@@ -10,6 +10,7 @@
 
 #import "DDChatViewController+keyboardNotification.h"
 #import "DDChatBaseViewController+chatToolBarTranslate.h"
+#import "DDChatBaseViewController+ChatKeyboard.h"
 
 @interface DDChatBaseViewController ()
 
@@ -28,6 +29,7 @@
     [self.view addGestureRecognizer:tap];
     
     [self registerNotificationCenter];
+    [self initChatKeyboard];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
