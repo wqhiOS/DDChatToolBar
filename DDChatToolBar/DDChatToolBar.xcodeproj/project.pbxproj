@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3395C2520B3C2BA00E0625E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C2420B3C2BA00E0625E /* AppDelegate.m */; };
+		E3395C2820B3C2BA00E0625E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C2720B3C2BA00E0625E /* ViewController.m */; };
+		E3395C2B20B3C2BA00E0625E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3395C2920B3C2BA00E0625E /* Main.storyboard */; };
+		E3395C2D20B3C2BA00E0625E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3395C2C20B3C2BA00E0625E /* Assets.xcassets */; };
+		E3395C3020B3C2BA00E0625E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3395C2E20B3C2BA00E0625E /* LaunchScreen.storyboard */; };
+		E3395C3320B3C2BA00E0625E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C3220B3C2BA00E0625E /* main.m */; };
+		E3395C3D20B3C2BA00E0625E /* DDChatToolBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C3C20B3C2BA00E0625E /* DDChatToolBarTests.m */; };
+		E3395C4820B3C2BA00E0625E /* DDChatToolBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395C4720B3C2BA00E0625E /* DDChatToolBarUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3395C3920B3C2BA00E0625E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3395C1820B3C2BA00E0625E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3395C1F20B3C2BA00E0625E;
+			remoteInfo = DDChatToolBar;
+		};
+		E3395C4420B3C2BA00E0625E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3395C1820B3C2BA00E0625E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3395C1F20B3C2BA00E0625E;
+			remoteInfo = DDChatToolBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3395C2020B3C2BA00E0625E /* DDChatToolBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDChatToolBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3395C2320B3C2BA00E0625E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E3395C2420B3C2BA00E0625E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E3395C2620B3C2BA00E0625E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E3395C2720B3C2BA00E0625E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E3395C2A20B3C2BA00E0625E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3395C2C20B3C2BA00E0625E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3395C2F20B3C2BA00E0625E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3395C3120B3C2BA00E0625E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3395C3220B3C2BA00E0625E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3395C3820B3C2BA00E0625E /* DDChatToolBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDChatToolBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3395C3C20B3C2BA00E0625E /* DDChatToolBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatToolBarTests.m; sourceTree = "<group>"; };
+		E3395C3E20B3C2BA00E0625E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3395C4320B3C2BA00E0625E /* DDChatToolBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDChatToolBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3395C4720B3C2BA00E0625E /* DDChatToolBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatToolBarUITests.m; sourceTree = "<group>"; };
+		E3395C4920B3C2BA00E0625E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3395C1D20B3C2BA00E0625E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3395C3520B3C2BA00E0625E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3395C4020B3C2BA00E0625E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3395C1720B3C2BA00E0625E = {
+			isa = PBXGroup;
+			children = (
+				E3395C2220B3C2BA00E0625E /* DDChatToolBar */,
+				E3395C3B20B3C2BA00E0625E /* DDChatToolBarTests */,
+				E3395C4620B3C2BA00E0625E /* DDChatToolBarUITests */,
+				E3395C2120B3C2BA00E0625E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3395C2120B3C2BA00E0625E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3395C2020B3C2BA00E0625E /* DDChatToolBar.app */,
+				E3395C3820B3C2BA00E0625E /* DDChatToolBarTests.xctest */,
+				E3395C4320B3C2BA00E0625E /* DDChatToolBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3395C2220B3C2BA00E0625E /* DDChatToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				E3395C2320B3C2BA00E0625E /* AppDelegate.h */,
+				E3395C2420B3C2BA00E0625E /* AppDelegate.m */,
+				E3395C2620B3C2BA00E0625E /* ViewController.h */,
+				E3395C2720B3C2BA00E0625E /* ViewController.m */,
+				E3395C2920B3C2BA00E0625E /* Main.storyboard */,
+				E3395C2C20B3C2BA00E0625E /* Assets.xcassets */,
+				E3395C2E20B3C2BA00E0625E /* LaunchScreen.storyboard */,
+				E3395C3120B3C2BA00E0625E /* Info.plist */,
+				E3395C3220B3C2BA00E0625E /* main.m */,
+			);
+			path = DDChatToolBar;
+			sourceTree = "<group>";
+		};
+		E3395C3B20B3C2BA00E0625E /* DDChatToolBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3395C3C20B3C2BA00E0625E /* DDChatToolBarTests.m */,
+				E3395C3E20B3C2BA00E0625E /* Info.plist */,
+			);
+			path = DDChatToolBarTests;
+			sourceTree = "<group>";
+		};
+		E3395C4620B3C2BA00E0625E /* DDChatToolBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3395C4720B3C2BA00E0625E /* DDChatToolBarUITests.m */,
+				E3395C4920B3C2BA00E0625E /* Info.plist */,
+			);
+			path = DDChatToolBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3395C1F20B3C2BA00E0625E /* DDChatToolBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3395C4C20B3C2BA00E0625E /* Build configuration list for PBXNativeTarget "DDChatToolBar" */;
+			buildPhases = (
+				E3395C1C20B3C2BA00E0625E /* Sources */,
+				E3395C1D20B3C2BA00E0625E /* Frameworks */,
+				E3395C1E20B3C2BA00E0625E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDChatToolBar;
+			productName = DDChatToolBar;
+			productReference = E3395C2020B3C2BA00E0625E /* DDChatToolBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3395C3720B3C2BA00E0625E /* DDChatToolBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3395C4F20B3C2BA00E0625E /* Build configuration list for PBXNativeTarget "DDChatToolBarTests" */;
+			buildPhases = (
+				E3395C3420B3C2BA00E0625E /* Sources */,
+				E3395C3520B3C2BA00E0625E /* Frameworks */,
+				E3395C3620B3C2BA00E0625E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3395C3A20B3C2BA00E0625E /* PBXTargetDependency */,
+			);
+			name = DDChatToolBarTests;
+			productName = DDChatToolBarTests;
+			productReference = E3395C3820B3C2BA00E0625E /* DDChatToolBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3395C4220B3C2BA00E0625E /* DDChatToolBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3395C5220B3C2BA00E0625E /* Build configuration list for PBXNativeTarget "DDChatToolBarUITests" */;
+			buildPhases = (
+				E3395C3F20B3C2BA00E0625E /* Sources */,
+				E3395C4020B3C2BA00E0625E /* Frameworks */,
+				E3395C4120B3C2BA00E0625E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3395C4520B3C2BA00E0625E /* PBXTargetDependency */,
+			);
+			name = DDChatToolBarUITests;
+			productName = DDChatToolBarUITests;
+			productReference = E3395C4320B3C2BA00E0625E /* DDChatToolBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3395C1820B3C2BA00E0625E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = wuqh;
+				TargetAttributes = {
+					E3395C1F20B3C2BA00E0625E = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					E3395C3720B3C2BA00E0625E = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = E3395C1F20B3C2BA00E0625E;
+					};
+					E3395C4220B3C2BA00E0625E = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = E3395C1F20B3C2BA00E0625E;
+					};
+				};
+			};
+			buildConfigurationList = E3395C1B20B3C2BA00E0625E /* Build configuration list for PBXProject "DDChatToolBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3395C1720B3C2BA00E0625E;
+			productRefGroup = E3395C2120B3C2BA00E0625E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3395C1F20B3C2BA00E0625E /* DDChatToolBar */,
+				E3395C3720B3C2BA00E0625E /* DDChatToolBarTests */,
+				E3395C4220B3C2BA00E0625E /* DDChatToolBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3395C1E20B3C2BA00E0625E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3395C3020B3C2BA00E0625E /* LaunchScreen.storyboard in Resources */,
+				E3395C2D20B3C2BA00E0625E /* Assets.xcassets in Resources */,
+				E3395C2B20B3C2BA00E0625E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3395C3620B3C2BA00E0625E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3395C4120B3C2BA00E0625E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3395C1C20B3C2BA00E0625E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3395C2820B3C2BA00E0625E /* ViewController.m in Sources */,
+				E3395C3320B3C2BA00E0625E /* main.m in Sources */,
+				E3395C2520B3C2BA00E0625E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3395C3420B3C2BA00E0625E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3395C3D20B3C2BA00E0625E /* DDChatToolBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3395C3F20B3C2BA00E0625E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3395C4820B3C2BA00E0625E /* DDChatToolBarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3395C3A20B3C2BA00E0625E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3395C1F20B3C2BA00E0625E /* DDChatToolBar */;
+			targetProxy = E3395C3920B3C2BA00E0625E /* PBXContainerItemProxy */;
+		};
+		E3395C4520B3C2BA00E0625E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3395C1F20B3C2BA00E0625E /* DDChatToolBar */;
+			targetProxy = E3395C4420B3C2BA00E0625E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3395C2920B3C2BA00E0625E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3395C2A20B3C2BA00E0625E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3395C2E20B3C2BA00E0625E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3395C2F20B3C2BA00E0625E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3395C4A20B3C2BA00E0625E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E3395C4B20B3C2BA00E0625E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3395C4D20B3C2BA00E0625E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDChatToolBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDChatToolBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3395C4E20B3C2BA00E0625E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDChatToolBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDChatToolBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3395C5020B3C2BA00E0625E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDChatToolBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDChatToolBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDChatToolBar.app/DDChatToolBar";
+			};
+			name = Debug;
+		};
+		E3395C5120B3C2BA00E0625E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDChatToolBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDChatToolBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDChatToolBar.app/DDChatToolBar";
+			};
+			name = Release;
+		};
+		E3395C5320B3C2BA00E0625E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDChatToolBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDChatToolBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DDChatToolBar;
+			};
+			name = Debug;
+		};
+		E3395C5420B3C2BA00E0625E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDChatToolBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDChatToolBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DDChatToolBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3395C1B20B3C2BA00E0625E /* Build configuration list for PBXProject "DDChatToolBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3395C4A20B3C2BA00E0625E /* Debug */,
+				E3395C4B20B3C2BA00E0625E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3395C4C20B3C2BA00E0625E /* Build configuration list for PBXNativeTarget "DDChatToolBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3395C4D20B3C2BA00E0625E /* Debug */,
+				E3395C4E20B3C2BA00E0625E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3395C4F20B3C2BA00E0625E /* Build configuration list for PBXNativeTarget "DDChatToolBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3395C5020B3C2BA00E0625E /* Debug */,
+				E3395C5120B3C2BA00E0625E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3395C5220B3C2BA00E0625E /* Build configuration list for PBXNativeTarget "DDChatToolBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3395C5320B3C2BA00E0625E /* Debug */,
+				E3395C5420B3C2BA00E0625E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3395C1820B3C2BA00E0625E /* Project object */;
+}
