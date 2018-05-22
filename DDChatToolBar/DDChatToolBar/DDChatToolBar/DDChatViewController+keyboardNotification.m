@@ -36,6 +36,9 @@
     if (lastStatus == DDChatToolBarStatusEmoji) {
         [self.emojiKeyboard dismissWithAnimation:NO];
     }
+    if (lastStatus == DDChatToolBarStatusMore) {
+        [self.moreKeyboard dismissWithAnimation:NO];
+    }
 }
 
 - (void)keyboardFrameWillChange:(NSNotification *)notification

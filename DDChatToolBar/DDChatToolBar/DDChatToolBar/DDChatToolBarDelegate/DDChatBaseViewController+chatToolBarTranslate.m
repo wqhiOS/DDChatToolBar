@@ -23,13 +23,21 @@
     
     if (toStatus == DDChatToolBarStatusEmoji) {
         [self.emojiKeyboard showInView:self.view withAnimation:YES];
+        if (fromStatus == DDChatToolBarStatusMore) {
+            [self.moreKeyboard dismissWithAnimation:NO];
+        }
     } else if (toStatus == DDChatToolBarStatusVoice) {
         if (fromStatus == DDChatToolBarStatusEmoji) {
             [self.emojiKeyboard dismissWithAnimation:YES];
-        }else if (DDChatToolBarStatusMore) {
-            
+        }else if (fromStatus == DDChatToolBarStatusMore) {
+            [self.moreKeyboard dismissWithAnimation:YES];
         }
-    } 
+    } else if (toStatus == DDChatToolBarStatusMore) {
+        [self.moreKeyboard showInView:self.view withAnimation:YES];
+        if (fromStatus == DDChatToolBarStatusEmoji) {
+            [self.emojiKeyboard dismissWithAnimation:NO];
+        }
+    }
 }
 
 @end

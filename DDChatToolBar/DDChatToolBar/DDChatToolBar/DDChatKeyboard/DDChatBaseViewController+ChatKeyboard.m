@@ -8,12 +8,15 @@
 
 #import "DDChatBaseViewController+ChatKeyboard.h"
 #import "DDChatEmojiKeyboard.h"
+#import "DDChatMoreKeyboard.h"
 
 @implementation DDChatBaseViewController (ChatKeyboard)
 
 - (void)initChatKeyboard {
     self.emojiKeyboard = [DDChatEmojiKeyboard defaultKeyboard];
     self.emojiKeyboard.delegate = self;
+    self.moreKeyboard = [DDChatMoreKeyboard defaultKeyboard];
+    self.moreKeyboard.delegate = self;
 }
 
 #pragma mark - DDChatEmojiKeyboard.h

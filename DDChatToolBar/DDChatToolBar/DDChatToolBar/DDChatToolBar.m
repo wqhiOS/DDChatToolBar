@@ -57,7 +57,12 @@
             if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
                 [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusEmoji to:DDChatToolBarStatusVoice];
             }
-        }else if (self.status == DDChatToolBarStatusKeyboard) {
+        } else if (self.status == DDChatToolBarStatusMore) {
+            [self.moreButton setImage:kMoreImage imageHL:kMoreImageHL];
+            if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+                [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusMore to:DDChatToolBarStatusVoice];
+            }
+        } else if (self.status == DDChatToolBarStatusKeyboard) {
             [self.inputTextView resignFirstResponder];
         }
         self.pressToTalkButton.hidden = NO;
@@ -98,6 +103,29 @@
     }
 }
 - (void)moreButtonClick:(UIButton *)button {
+    
+    if (self.status == DDChatToolBarStatusMore) {
+    //-> 文字输入
+        if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+            [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusMore to:DDChatToolBarStatusKeyboard];
+        }
+        [self.inputTextView becomeFirstResponder];
+        self.status = DDChatToolBarStatusKeyboard;
+    }else {
+    //-> more键盘
+        if (self.status == DDChatToolBarStatusVoice) {
+            [self.voiceButton setImage:kVoiceImage imageHL:kVoiceImageHL];
+            self.pressToTalkButton.hidden = YES;
+        }
+        [self.moreButton setImage:kMoreImage imageHL:kMoreImageHL];
+        if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+            [self.translateDelegate chatBar:self changeStatusFrom:self.status to:DDChatToolBarStatusMore];
+        }
+        if (self.status == DDChatToolBarStatusKeyboard) {
+            [self.inputTextView resignFirstResponder];
+        }
+        self.status = DDChatToolBarStatusMore;
+    }
     
 }
 

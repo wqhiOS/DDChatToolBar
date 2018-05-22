@@ -55,19 +55,9 @@
             [self removeFromSuperview];
         }];
     } else {
-        
-//        [UIView animateWithDuration:0.3 animations:^{
-        
-        
-            [self mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.bottom.equalTo(self.superview.mas_bottom).offset(self.bounds.size.height);
-            }];
-            [self.superview layoutIfNeeded];
-        [self removeFromSuperview];
-        
-//        } completion:^(BOOL finished) {
-//            [self removeFromSuperview];
-//        }];
+
+            [self removeFromSuperview];
+
     }
 }
 
