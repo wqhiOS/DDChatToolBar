@@ -37,6 +37,12 @@
         if (fromStatus == DDChatToolBarStatusEmoji) {
             [self.emojiKeyboard dismissWithAnimation:NO];
         }
+    } else if (toStatus == DDChatToolBarStatusInit) {
+        if (fromStatus == DDChatToolBarStatusEmoji) {
+            [self.emojiKeyboard dismissWithAnimation:YES];
+        }else if (fromStatus == DDChatToolBarStatusMore) {
+            [self.moreKeyboard dismissWithAnimation:YES];
+        }
     }
 }
 

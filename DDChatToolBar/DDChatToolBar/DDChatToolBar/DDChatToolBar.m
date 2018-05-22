@@ -117,6 +117,9 @@
             [self.voiceButton setImage:kVoiceImage imageHL:kVoiceImageHL];
             self.pressToTalkButton.hidden = YES;
         }
+        if (self.status == DDChatToolBarStatusEmoji) {
+            [self.emojiButton setImage:kEmojiImage imageHL:kEmojiImageHL];
+        }
         [self.moreButton setImage:kMoreImage imageHL:kMoreImageHL];
         if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
             [self.translateDelegate chatBar:self changeStatusFrom:self.status to:DDChatToolBarStatusMore];
@@ -198,6 +201,17 @@
 - (BOOL)resignFirstResponder {
     if (self.inputTextView.isFirstResponder) {
         [self.inputTextView resignFirstResponder];
+    }
+    if (self.status == DDChatToolBarStatusEmoji) {
+        if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+            [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusEmoji to:DDChatToolBarStatusInit];
+        }
+        self.status = DDChatToolBarStatusInit;
+    }else if (self.status == DDChatToolBarStatusMore) {
+        if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
+            [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusMore to:DDChatToolBarStatusInit];
+        }
+        self.status = DDChatToolBarStatusInit;
     }
     return [super resignFirstResponder];
 }
