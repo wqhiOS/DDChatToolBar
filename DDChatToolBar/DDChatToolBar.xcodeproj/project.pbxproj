@@ -341,12 +341,20 @@
 				E3395CC520B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m */,
 				E3395CBD20B3F49500E0625E /* DDChatBaseKeyboard.h */,
 				E3395CBE20B3F49500E0625E /* DDChatBaseKeyboard.m */,
-				E3395CC020B3F4A200E0625E /* DDChatEmojiKeyboard.h */,
-				E3395CC120B3F4A200E0625E /* DDChatEmojiKeyboard.m */,
+				E366305720B44FDC0046AA77 /* DDChatEmojiKeyboard */,
 				E3395D0520B430D800E0625E /* DDChatMoreKeyboard.h */,
 				E3395D0620B430D800E0625E /* DDChatMoreKeyboard.m */,
 			);
 			path = DDChatKeyboard;
+			sourceTree = "<group>";
+		};
+		E366305720B44FDC0046AA77 /* DDChatEmojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E3395CC020B3F4A200E0625E /* DDChatEmojiKeyboard.h */,
+				E3395CC120B3F4A200E0625E /* DDChatEmojiKeyboard.m */,
+			);
+			path = DDChatEmojiKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

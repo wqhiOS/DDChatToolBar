@@ -8,6 +8,14 @@
 
 #import "DDChatEmojiKeyboard.h"
 
+@interface DDChatEmojiKeyboard()
+
+@property (nonatomic, strong) UICollectionView *emojiCollectionView;
+@property (nonatomic, strong) UICollectionView *emojiCategoryCollectionView;
+@property (nonatomic, strong) UIPageControl *pageControl;
+
+@end
+
 @implementation DDChatEmojiKeyboard
 
 - (void)dealloc {
