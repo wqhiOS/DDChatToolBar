@@ -9,8 +9,8 @@
 #import "DDChatBaseViewController.h"
 
 #import "DDChatViewController+keyboardNotification.h"
-#import "DDChatBaseViewController+chatToolBarTranslate.h"
 #import "DDChatBaseViewController+ChatKeyboard.h"
+#import "DDChatBaseViewController+chatToolBarTranslate.h"
 
 @interface DDChatBaseViewController ()
 

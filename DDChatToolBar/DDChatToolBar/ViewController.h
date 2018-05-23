@@ -10,6 +10,7 @@
 
 @interface ViewController : DDChatBaseViewController
 
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 

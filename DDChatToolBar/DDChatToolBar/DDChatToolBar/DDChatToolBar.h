@@ -16,4 +16,5 @@
 
 @property (nonatomic, assign) DDChatToolBarStatus status;
 
+- (instancetype)initWithTableView:(UITableView *)tableView;
 @end

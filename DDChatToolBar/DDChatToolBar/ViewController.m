@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "DDChatToolBar.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -32,18 +31,10 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellId"];
     [self.view addSubview:self.tableView];
     
-    self.chatToolBar = [[DDChatToolBar alloc]init];
+    self.chatToolBar = [[DDChatToolBar alloc]initWithTableView:self.tableView];
     self.chatToolBar.translateDelegate = self;
-    [self.view addSubview:self.chatToolBar];
+
     
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.and.top.equalTo(self.view);
-    }];
-    [self.chatToolBar mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo(@49);
-        make.left.right.and.bottom.equalTo(self.view);
-        make.top.equalTo(self.tableView.mas_bottom);
-    }];
 }
 
 #pragma mark - UITableViewDataSource

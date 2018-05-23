@@ -40,6 +40,23 @@
     return self;
 }
 
+- (instancetype)initWithTableView:(UITableView *)tableView {
+    if (self = [self initWithFrame:CGRectZero]) {
+        if (!self.superview) {
+            [tableView.superview  addSubview:self];
+        }
+        [tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.and.top.equalTo(self.superview);
+        }];
+        [self mas_remakeConstraints:^(MASConstraintMaker *make) {
+//            make.height.equalTo(@49);
+            make.left.right.and.bottom.equalTo(self.superview);
+            make.top.equalTo(tableView.mas_bottom);
+        }];
+    }
+    return self;
+}
+
 #pragma mark - Action
 - (void)voiceButtonClick:(UIButton* )button {
     if (self.status == DDChatToolBarStatusVoice) {
@@ -150,6 +167,11 @@
     self.inputTextView.layer.borderColor = [UIColor colorWithWhite:0.0 alpha:0.3].CGColor;
     self.inputTextView.layer.cornerRadius = 4.0f;
     self.inputTextView.delegate = self;
+//    self.inputTextView.textContainer.maximumNumberOfLines = 3;
+  
+//    self.inputTextView.linkTextAttributes
+    self.inputTextView.showsVerticalScrollIndicator = NO;
+    self.inputTextView.bounces = NO;
     [self addSubview:self.inputTextView];
 
     
@@ -192,6 +214,7 @@
         make.left.equalTo(self.voiceButton.mas_right).offset(7);
         make.right.equalTo(self.emojiButton.mas_left).offset(-7);
         make.height.equalTo(@35);
+        make.top.equalTo(self).mas_offset(7);
     }];
     
     [self.pressToTalkButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -252,6 +275,18 @@
 }
 
 #pragma mark - UITextViewDelegate
+- (void)textViewDidChange:(UITextView *)textView {
+//    CGFloat height = [self heightForTextView:textView WithText:textView.text];
+//    height = height < 35 ? 35 : height;
+//
+//    [UIView animateWithDuration:0.3 animations:^{
+//        [self.inputTextView mas_updateConstraints:^(MASConstraintMaker *make) {
+//            make.height.equalTo(@(height));
+//        }];
+//        [self layoutIfNeeded];
+//    }];
+    
+}
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
     if (self.status != DDChatToolBarStatusKeyboard) {
         if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
@@ -265,7 +300,56 @@
         }
         self.status = DDChatToolBarStatusKeyboard;
     }
+    
     return YES;
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+
+    NSLog(@"text:%@",text);
+    NSLog(@"textView:%@",textView.text);
+    float height;
+    if ([text isEqual:@""]) {
+
+        if (![textView.text isEqualToString:@""]) {
+            
+            height = [ self heightForTextView:textView WithText:[textView.text substringToIndex:[textView.text length] - 1]];
+
+        }else{
+
+            height = [ self heightForTextView:textView WithText:textView.text];
+        }
+    }else{
+
+        height = [self heightForTextView:textView WithText:[NSString stringWithFormat:@"%@%@",textView.text,text]];
+    }
+    if (height > 112.f) {
+        return YES;
+    }
+    
+    height = height < 35 ? 35 : height;
+
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.inputTextView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.equalTo(@(height));
+        }];
+        [self layoutIfNeeded];
+    }];
+
+    return YES;
+    
+}
+
+- (float) heightForTextView: (UITextView *)textView WithText: (NSString *) strText{
+
+    NSDictionary* attributes =@{NSFontAttributeName:[UIFont systemFontOfSize:16]};
+    CGSize size = [strText boundingRectWithSize: CGSizeMake(textView.contentSize.width-textView.textContainer.lineFragmentPadding * 2, CGFLOAT_MAX)
+                                          options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine
+                                       attributes:attributes
+                                          context:nil].size;
+    
+    
+    float textHeight = ceil(size.height)+16;
+    return textHeight;
 }
 
 @end
