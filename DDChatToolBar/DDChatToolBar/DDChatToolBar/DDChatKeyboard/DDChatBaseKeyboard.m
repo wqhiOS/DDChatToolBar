@@ -11,6 +11,13 @@
 
 @implementation DDChatBaseKeyboard
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = HexColor(0xF2F2F5);
+    }
+    return self;
+}
+
 - (void)showInView:(UIView *)view withAnimation:(BOOL)animation {
     [view addSubview:self];
     [self mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -60,5 +67,17 @@
 
     }
 }
+
+- (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 0.5);
+    CGContextSetStrokeColorWithColor(context, [UIColor colorWithWhite:0.5 alpha:0.3].CGColor);
+    CGContextBeginPath(context);
+    CGContextMoveToPoint(context, 0, 0);
+    CGContextAddLineToPoint(context, [UIScreen mainScreen].bounds.size.width, 0);
+    CGContextStrokePath(context);
+}
+
 
 @end

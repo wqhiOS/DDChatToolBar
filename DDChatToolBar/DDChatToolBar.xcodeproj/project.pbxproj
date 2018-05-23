@@ -52,6 +52,9 @@
 		E3395CC220B3F4A200E0625E /* DDChatEmojiKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CC120B3F4A200E0625E /* DDChatEmojiKeyboard.m */; };
 		E3395CC620B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395CC520B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m */; };
 		E3395D0720B430D800E0625E /* DDChatMoreKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E3395D0620B430D800E0625E /* DDChatMoreKeyboard.m */; };
+		E367937E20B4F44B00B4093F /* DDEmojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E367937D20B4F44B00B4093F /* DDEmojiCell.m */; };
+		E367945320B4FED400B4093F /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E367945220B4FED400B4093F /* image.xcassets */; };
+		E367945620B50EEE00B4093F /* DDChatEmojiGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = E367945520B50EEE00B4093F /* DDChatEmojiGroupView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +157,11 @@
 		E3395CC520B3F90C00E0625E /* DDChatBaseViewController+ChatKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DDChatBaseViewController+ChatKeyboard.m"; sourceTree = "<group>"; };
 		E3395D0520B430D800E0625E /* DDChatMoreKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatMoreKeyboard.h; sourceTree = "<group>"; };
 		E3395D0620B430D800E0625E /* DDChatMoreKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatMoreKeyboard.m; sourceTree = "<group>"; };
+		E367937C20B4F44B00B4093F /* DDEmojiCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDEmojiCell.h; sourceTree = "<group>"; };
+		E367937D20B4F44B00B4093F /* DDEmojiCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDEmojiCell.m; sourceTree = "<group>"; };
+		E367945220B4FED400B4093F /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		E367945420B50EEE00B4093F /* DDChatEmojiGroupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDChatEmojiGroupView.h; sourceTree = "<group>"; };
+		E367945520B50EEE00B4093F /* DDChatEmojiGroupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDChatEmojiGroupView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +302,7 @@
 		E3395C8420B3D4D300E0625E /* imageSource */ = {
 			isa = PBXGroup;
 			children = (
+				E367945220B4FED400B4093F /* image.xcassets */,
 				E3395C8520B3D4D300E0625E /* chat_toolbar_emotion@3x.png */,
 				E3395C8620B3D4D300E0625E /* chat_toolbar_emotion@2x.png */,
 				E3395C8720B3D4D300E0625E /* chat_toolbar_voice_HL@3x.png */,
@@ -353,8 +362,20 @@
 			children = (
 				E3395CC020B3F4A200E0625E /* DDChatEmojiKeyboard.h */,
 				E3395CC120B3F4A200E0625E /* DDChatEmojiKeyboard.m */,
+				E367945720B50F3900B4093F /* DDChatEmojiGroupView */,
+				E367937C20B4F44B00B4093F /* DDEmojiCell.h */,
+				E367937D20B4F44B00B4093F /* DDEmojiCell.m */,
 			);
 			path = DDChatEmojiKeyboard;
+			sourceTree = "<group>";
+		};
+		E367945720B50F3900B4093F /* DDChatEmojiGroupView */ = {
+			isa = PBXGroup;
+			children = (
+				E367945420B50EEE00B4093F /* DDChatEmojiGroupView.h */,
+				E367945520B50EEE00B4093F /* DDChatEmojiGroupView.m */,
+			);
+			path = DDChatEmojiGroupView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +492,7 @@
 				E3395C3020B3C2BA00E0625E /* LaunchScreen.storyboard in Resources */,
 				E3395C2D20B3C2BA00E0625E /* Assets.xcassets in Resources */,
 				E3395C9520B3D4D300E0625E /* chat_toolbar_emotion@3x.png in Resources */,
+				E367945320B4FED400B4093F /* image.xcassets in Resources */,
 				E3395CA320B3D4D300E0625E /* chat_toolbar_keyboard_HL@2x.png in Resources */,
 				E3395C9920B3D4D300E0625E /* chat_toolbar_emotion_HL@3x.png in Resources */,
 				E3395CA420B3D4D300E0625E /* chat_toolbar_voice@2x.png in Resources */,
@@ -507,7 +529,9 @@
 				E3395CAD20B3D73200E0625E /* DDChatViewController+keyboardNotification.m in Sources */,
 				E3395CB420B3EAB800E0625E /* UIButton+Extensions.m in Sources */,
 				E3395C7C20B3C50800E0625E /* MASViewConstraint.m in Sources */,
+				E367945620B50EEE00B4093F /* DDChatEmojiGroupView.m in Sources */,
 				E3395CBF20B3F49500E0625E /* DDChatBaseKeyboard.m in Sources */,
+				E367937E20B4F44B00B4093F /* DDEmojiCell.m in Sources */,
 				E3395C8320B3C6EE00E0625E /* DDPressToTalkButton.m in Sources */,
 				E3395CBA20B3F06A00E0625E /* DDChatBaseViewController+chatToolBarTranslate.m in Sources */,
 				E3395C7D20B3C50800E0625E /* MASViewAttribute.m in Sources */,

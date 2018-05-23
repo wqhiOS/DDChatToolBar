@@ -134,6 +134,9 @@
 
 #pragma mark - UI
 - (void)setupUI {
+    
+    self.backgroundColor = HexColor(0xF2F2F5);
+    
     self.voiceButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.voiceButton setImage:kVoiceImage imageHL:kVoiceImageHL];
     [self.voiceButton addTarget:self action:@selector(voiceButtonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -220,6 +223,19 @@
     
     return (self.status == DDChatToolBarStatusKeyboard || self.status == DDChatToolBarStatusEmoji || self.status == DDChatToolBarStatusMore);
     
+}
+
+- (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 0.5);
+    CGContextSetStrokeColorWithColor(context, [UIColor colorWithWhite:0.5 alpha:0.3].CGColor);
+    CGContextBeginPath(context);
+    CGContextMoveToPoint(context, 0, 0);
+    CGContextAddLineToPoint(context, [UIScreen mainScreen].bounds.size.width, 0);
+    CGContextMoveToPoint(context, 0, 49);
+    CGContextAddLineToPoint(context, [UIScreen mainScreen].bounds.size.width, 49);
+    CGContextStrokePath(context);
 }
 
 #pragma mark - Private
