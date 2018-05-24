@@ -229,11 +229,13 @@
         [self.inputTextView resignFirstResponder];
     }
     if (self.status == DDChatToolBarStatusEmoji) {
+        [self.emojiButton setImage:kEmojiImage imageHL:kEmojiImageHL];
         if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
             [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusEmoji to:DDChatToolBarStatusInit];
         }
         self.status = DDChatToolBarStatusInit;
     }else if (self.status == DDChatToolBarStatusMore) {
+//        [self.moreButton setImage:kMoreImage imageHL:kMoreImageHL];
         if ([self.translateDelegate respondsToSelector:@selector(chatBar:changeStatusFrom:to:)]) {
             [self.translateDelegate chatBar:self changeStatusFrom:DDChatToolBarStatusMore to:DDChatToolBarStatusInit];
         }
